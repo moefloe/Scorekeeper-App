@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scorekeeper</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Catamaran:wght@400;600;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Catamaran:wght@100;400;600;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,8 +18,8 @@
             <h2>Argentina</h2>
             <div class="home-flag"><img src="AR.svg"></div>
             <div class="btn-container">
-                <button class="home-plus-btn" onclick="homePlus()">+1</button>
-                <button class="home-minus-btn" onclick="homeMinus()">-1</button>
+                <button id="home-plus-btn">+1</button>
+                <button id="home-minus-btn" onclick="homeMinus()">-1</button>
             </div>
         </div>
         <div class="score-line"><span class="home-score">0</span>:<span class="guest-score">0</span></div>
@@ -27,8 +27,8 @@
             <h2>France</h2>
             <div class="guest-flag"><img src="FR.svg"></div>
             <div class="btn-container">
-                <button class="guest-plus-btn" onclick="guestPlus()">+1</button>
-                <button class="guest-minus-btn" onclick="guestMinus()">-1</button>
+                <button id="guest-plus-btn">+1</button>
+                <button id="guest-minus-btn">-1</button>
             </div>
         </div>
     </div>
@@ -40,9 +40,11 @@
     </div>
     <script src="index.js"></script>
 </body>
-<!-- <footer>
-    <div class="credits">Site by Alpha Bah</div>
-    <div class="photo-tag">Photo by Thomas Serer at Unsplash</div>
-</footer> -->
+<footer>
+    <p>Coded by Alpha Bah for Scrimba Frontend Dev Bootcamp</p>
+    <p class="photo-tag">Photo: Thomas Serer at
+        <a href="https://unsplash.com/@jesusance">Unsplash.com</a>
+    </p>
+</footer>
 
 </html>
